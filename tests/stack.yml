@@ -1,0 +1,13 @@
+---
+- name: core roles
+  hosts: all
+  roles:
+    - bootstrap
+    - tmux
+    - vim
+    - zsh
+
+- name: optional roles
+  hosts: all
+  roles:
+    - short-stack-command-line-tools
