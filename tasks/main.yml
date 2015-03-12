@@ -1,5 +1,5 @@
 ---
-- name: install/update commonly used command line tools
+- name: ensure command line tools are installed/updated
   homebrew: name={{ item }} state=latest
   with_items:
     - autojump
@@ -7,5 +7,6 @@
     - the_silver_searcher
     - wget
 
-- name: add shell configuration to zsh
+- name: ensure zsh configuration is added to stack.d
   copy: src=command-line-tools.zsh dest={{ stack_d }}
+  when: "'zsh' in role_names"

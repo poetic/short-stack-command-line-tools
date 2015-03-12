@@ -1,6 +1,7 @@
 Short Stack: Command Line Tools
 =========
 [![Build Status](https://travis-ci.org/poetic/short-stack-command-line-tools.svg)](https://travis-ci.org/poetic/short-stack-command-line-tools)
+
 Installs commonly used command line tools
 
 Requirements
