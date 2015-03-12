@@ -27,3 +27,8 @@ alias gsh="git shortlog | grep -E '^[  ]+\w+' | wc -l"
 
 # Shows a list of all developers and the number of commits they've made
 alias gu="git shortlog | grep -E '^[^ ]'"
+
+# Heroku aliases
+alias hrc='heroku run rails c'
+alias hrdb='heroku run rake db:migrate'
+alias hlogs='heroku logs --tail'
