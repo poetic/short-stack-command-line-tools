@@ -10,4 +10,3 @@
 
 - name: ensure zsh configuration is added to stack.d
   copy: src=command-line-tools.zsh dest={{ stack_d }}
-  when: "'zsh' in role_names"
