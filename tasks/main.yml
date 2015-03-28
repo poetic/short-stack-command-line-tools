@@ -3,6 +3,7 @@
   homebrew: name={{ item }} state=latest
   with_items:
     - autojump
+    - git
     - heroku-toolbelt
     - hub
     - the_silver_searcher
