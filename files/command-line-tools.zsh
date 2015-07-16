@@ -32,3 +32,6 @@ alias gu="git shortlog | grep -E '^[^ ]'"
 alias hrc='heroku run rails c'
 alias hrdb='heroku run rake db:migrate'
 alias hlogs='heroku logs --tail'
+
+# Configure autojump
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
