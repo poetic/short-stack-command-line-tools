@@ -1,4 +1,7 @@
 ---
+- name: ensure tldr-pages/tldr is tapped
+  homebrew_tap: tap=tldr-pages/tldr state=present
+
 - name: ensure command line tools are installed/updated
   homebrew: name={{ item }} state=latest
   with_items:
@@ -9,6 +12,7 @@
     - hub
     - irssi
     - the_silver_searcher
+    - tldr
     - wget
 
 - name: ensure zsh configuration is added to stack.d
