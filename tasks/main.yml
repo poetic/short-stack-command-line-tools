@@ -13,6 +13,7 @@
     - irssi
     - the_silver_searcher
     - tldr
+    - trash
     - wget
 
 - name: ensure zsh configuration is added to stack.d
